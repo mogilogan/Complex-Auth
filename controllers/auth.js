@@ -1,6 +1,5 @@
 const User = require('../models/User.js');
 
-
 exports.register = async(req,res, next) =>{
     const {username , email, password} = req.body;
 try {
@@ -18,7 +17,6 @@ try {
      
     });
 }
-
 };
 
 exports.login= (req,res, next) =>{
@@ -30,5 +28,5 @@ exports.forgotpassword = (req,res, next) =>{
 };
 
 exports.resetpassword = (req,res, next) =>{
-    res.send("Reset password ROute");
+    res.send("Reset password ROuteokkkkk");
 };
