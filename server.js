@@ -9,7 +9,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/auth', require('./routes/auth'));
+app.use('/api/auth', require('./routes/auth.js'));
+app.use('/api/private', require("./routes/private.js"));
 
 // Error Handler (last Middlerware)
 app.use(errorHandler);
